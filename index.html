@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Проверенные игры 2026: как самому проверить игру до ставки</title>
+<meta name="description" content="Как самому проверить игру в 2026 году: нет сертификата в описании, RTP в окне «i» ниже витринного, клиент с чужого домена, демо не как на деньги, игра из списка клонов — смысл и шаг для каждой.">
+<link rel="canonical" href="https://proverennye-igry338.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Проверенные игры 2026: пять ситуаций и шаг проверки для каждой">
+<meta property="og:description" content="Кейс-таблица «ситуация → смысл → проверка → шаг» для пяти частых случаев: сертификат, отдача в окне «i», домен загрузки, демо против денег и клоны известных игр.">
+<meta property="og:url" content="https://proverennye-igry338.github.io/">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+:root{
+ --sand:#f1ebdc;--sheet:#faf5e9;--sheet-2:#e8e1cd;--raise:#fffdf5;
+ --ink:#211e15;--ink-2:#4a4638;--ink-3:#6f6855;--line:#d9d1b9;--line-2:#b7ac8e;
+ --olive:#59621f;--olive-fill:#6a7429;--olive-deep:#3f4717;--olive-soft:#e4e5cb;--on-olive:#f7f7ea;
+ --khaki:#8a7a3e;--khaki-soft:#ece3c6;
+ --good:#3c6b47;--good-soft:#dbe7da;--warn:#8a6411;--warn-soft:#efe6c6;--bad:#9d3622;--bad-soft:#f1ded6;
+ --mark:#e4e5cb;
+ --d1:#59621f;--d2:#9a7d1f;--d3:#a8502a;--d4:#4a5a6a;
+ --pv-title:"Vollkorn","PT Serif","Iowan Old Style",Georgia,serif;
+ --pv-body:"Source Sans 3","Segoe UI",Roboto,system-ui,sans-serif;
+ --z-h1:clamp(2.1rem,1.4rem + 2.7vw,3.05rem);--z-h2:clamp(1.48rem,1.2rem + 1.1vw,1.9rem);--z-h3:1.16rem;
+ --z-lead:clamp(1.1rem,1rem + .45vw,1.25rem);--z-body:1.065rem;--z-small:.9rem;--z-tiny:.78rem;
+ --space:clamp(16px,4.4vw,30px);--rhythm:clamp(44px,6.2vw,80px);--col:740px;--col-wide:1100px;
+ --r-s:4px;--r-m:9px;--r-l:15px;
+ --el-1:0 1px 0 rgba(33,30,21,.05),0 2px 5px rgba(33,30,21,.06);
+ --el-2:0 4px 10px rgba(33,30,21,.08),0 20px 32px -18px rgba(33,30,21,.22);
+ --curve:cubic-bezier(.22,1,.36,1);--t-fast:150ms;--t-mid:240ms;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --sand:#15140e;--sheet:#1d1b13;--sheet-2:#272418;--raise:#2c2920;
+ --ink:#ece6d4;--ink-2:#bcb69d;--ink-3:#8c866f;--line:#312e1f;--line-2:#4b4731;
+ --olive:#b3c060;--olive-fill:#a3b051;--olive-deep:#c7d47d;--olive-soft:#282c13;--on-olive:#13140a;
+ --khaki:#cdb161;--khaki-soft:#2f2a16;
+ --good:#74bd84;--good-soft:#1d3225;--warn:#d3a74c;--warn-soft:#342b15;--bad:#e08270;--bad-soft:#3b201b;
+ --mark:#2c3016;
+ --d1:#b3c060;--d2:#d3b24e;--d3:#dd8a5f;--d4:#86a0b8;color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+ --sand:#15140e;--sheet:#1d1b13;--sheet-2:#272418;--raise:#2c2920;
+ --ink:#ece6d4;--ink-2:#bcb69d;--ink-3:#8c866f;--line:#312e1f;--line-2:#4b4731;
+ --olive:#b3c060;--olive-fill:#a3b051;--olive-deep:#c7d47d;--olive-soft:#282c13;--on-olive:#13140a;
+ --khaki:#cdb161;--khaki-soft:#2f2a16;
+ --good:#74bd84;--good-soft:#1d3225;--warn:#d3a74c;--warn-soft:#342b15;--bad:#e08270;--bad-soft:#3b201b;
+ --mark:#2c3016;
+ --d1:#b3c060;--d2:#d3b24e;--d3:#dd8a5f;--d4:#86a0b8;color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important;transform:none!important}}
+body{margin:0;background:var(--sand);color:var(--ink);font-family:var(--pv-body);font-size:var(--z-body);line-height:1.63;font-feature-settings:"kern","liga"}
+::selection{background:var(--mark)}
+a{color:var(--olive);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--olive-fill)}
+h1,h2,h3{font-family:var(--pv-title);line-height:1.17;margin:0 0 .5em}
+h1{font-size:var(--z-h1);font-weight:700;max-width:20ch;letter-spacing:-.005em}
+h2{font-size:var(--z-h2);font-weight:600;margin-top:0;letter-spacing:-.005em}
+h3{font-size:var(--z-h3);font-weight:700;margin-top:1.5em;font-family:var(--pv-body);letter-spacing:0}
+p{margin:0 0 1.05em}
+.pv-lead{font-size:var(--z-lead);color:var(--ink-2);max-width:61ch}
+small,.pv-fine{font-size:var(--z-small);color:var(--ink-3)}
+/* шапка */
+.pv-top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--sand) 90%,transparent);backdrop-filter:saturate(1.15);border-bottom:1px solid var(--line);height:58px}
+.pv-top .pv-row{max-width:var(--col-wide);margin:0 auto;padding:0 var(--space);height:100%;display:flex;align-items:center;gap:20px}
+.pv-logo{display:flex;align-items:center;gap:9px;flex:none;font-family:var(--pv-title);font-weight:700;font-size:1.26rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.pv-logo svg{width:25px;height:25px;flex:none}
+.pv-menu{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none;font-size:var(--z-small);font-weight:500;white-space:nowrap;mask-image:linear-gradient(90deg,#000 90%,transparent)}
+.pv-menu::-webkit-scrollbar{display:none}
+.pv-menu a{color:var(--ink-2);text-decoration:none;padding:5px 0;border-bottom:2px solid transparent}
+.pv-menu a:hover,.pv-menu a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--olive)}
+.pv-skin{margin-left:auto;flex:none;background:none;border:1px solid var(--line-2);color:var(--ink-2);border-radius:var(--r-s);font:inherit;font-size:var(--z-tiny);font-weight:600;padding:5px 12px;cursor:pointer}
+.pv-skin:hover{border-color:var(--olive);color:var(--ink)}
+/* каркас */
+.pv-wrap{max-width:var(--col-wide);margin:0 auto;padding:0 var(--space)}
+.pv-sec{padding:var(--rhythm) 0 0;max-width:var(--col)}
+.pv-head{padding:clamp(38px,7vw,70px) 0 0;max-width:var(--col)}
+.pv-date{display:inline-flex;align-items:center;gap:8px;font-size:var(--z-small);color:var(--ink-3);margin-bottom:16px;font-variant-numeric:oldstyle-nums}
+.pv-date b{color:var(--ink-2);font-weight:600}
+.pv-date i{width:7px;height:7px;border-radius:2px;background:var(--olive);font-style:normal;transform:rotate(45deg)}
+.pv-key{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0}
+.pv-key span{display:inline-flex;align-items:center;gap:7px;font-size:var(--z-small);font-weight:600;padding:6px 13px;border-radius:var(--r-s);border:1px solid var(--line)}
+.pv-key span::before{content:"";width:9px;height:9px;border-radius:2px}
+.pv-key .k-ok::before{background:var(--good)}
+.pv-key .k-mid::before{background:var(--warn)}
+.pv-key .k-no::before{background:var(--bad)}
+/* индекс */
+.pv-no{display:inline-block;font-family:var(--pv-title);font-weight:600;font-size:var(--z-tiny);letter-spacing:.13em;color:var(--olive);background:var(--olive-soft);padding:5px 11px;border-radius:var(--r-s);margin-bottom:14px}
+/* вывод-врезка */
+.pv-sum{background:var(--sheet);border:1px solid var(--line);border-radius:var(--r-m);padding:17px 20px 16px;margin:0 0 22px;box-shadow:var(--el-1);position:relative;padding-top:24px}
+.pv-sum::before{content:"Коротко";position:absolute;top:-10px;left:16px;font-family:var(--pv-body);font-size:var(--z-tiny);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-olive);background:var(--olive);padding:3px 9px;border-radius:var(--r-s)}
+.pv-sum p{margin:0}
+.pv-sum b{font-weight:700}
+/* фигуры */
+.pv-fig{margin:30px 0;background:var(--sheet);border:1px solid var(--line);border-radius:var(--r-l);padding:20px 20px 12px;box-shadow:var(--el-1)}
+.pv-fig svg{display:block;width:100%;height:auto;font-family:var(--pv-body)}
+.pv-fig figcaption{font-size:var(--z-small);color:var(--ink-3);padding:12px 2px 6px;line-height:1.5}
+.pv-fig figcaption b{color:var(--ink-2);font-weight:600}
+.pv-leg{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:var(--z-tiny);color:var(--ink-3);padding:4px 2px 2px}
+.pv-leg i{display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+/* таблицы */
+.pv-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px 0}
+.pv-wide{max-width:var(--col-wide)}
+table{border-collapse:collapse;width:100%;font-size:var(--z-small);line-height:1.43}
+caption{text-align:left;font-family:var(--pv-title);font-weight:600;font-size:1.04rem;color:var(--ink);padding:8px 0 10px}
+th,td{padding:10px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:700;color:var(--ink-2);background:var(--sheet-2);font-size:var(--z-tiny);letter-spacing:.02em}
+thead th{position:sticky;top:0;z-index:1}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--sheet-2) 42%,transparent)}
+.pv-scroll table th:first-child,.pv-scroll table td:first-child{position:sticky;left:0;background:var(--sheet)}
+.pv-scroll table th:first-child{background:var(--sheet-2)}
+/* флаги */
+.pv-tag{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-weight:700;font-size:var(--z-tiny);padding:2px 8px;border-radius:var(--r-s)}
+.pv-tag.t-ok{background:var(--good-soft);color:var(--good)}
+.pv-tag.t-mid{background:var(--warn-soft);color:var(--warn)}
+.pv-tag.t-no{background:var(--bad-soft);color:var(--bad)}
+/* маршрут */
+.pv-route{counter-reset:r;list-style:none;padding:0;margin:24px 0}
+.pv-route li{counter-increment:r;display:grid;grid-template-columns:38px 1fr;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.pv-route li:last-child{border-bottom:1px solid var(--line)}
+.pv-route li::before{content:counter(r,decimal-leading-zero);font-family:var(--pv-title);font-weight:600;color:var(--olive);font-size:1.12rem;line-height:1.3}
+.pv-route b{font-weight:700}
+/* списки */
+.pv-dots{padding-left:0;list-style:none;margin:0 0 1.1em}
+.pv-dots li{position:relative;padding-left:22px;margin-bottom:.5em}
+.pv-dots li::before{content:"";position:absolute;left:3px;top:.6em;width:8px;height:8px;background:var(--khaki);transform:rotate(45deg)}
+/* детали */
+details{border-top:1px solid var(--line);margin:0;background:transparent}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:15px 4px;font-family:var(--pv-title);font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--olive);font-weight:400;font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+.pv-ans{padding:0 4px 18px;color:var(--ink-2)}
+.pv-ans p{margin:0 0 .7em}
+.pv-ans p:last-child{margin:0}
+/* забота и канал */
+.pv-care{background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--warn) 34%,transparent);border-radius:var(--r-m);padding:17px 20px;font-size:var(--z-small);color:var(--ink-2);margin-top:22px}
+.pv-chan{background:var(--olive-soft);border-radius:var(--r-l);padding:28px;margin-top:var(--rhythm);max-width:var(--col)}
+.pv-chan h2{font-size:1.38rem}
+.pv-link{display:inline-block;background:var(--olive);color:var(--on-olive);text-decoration:none;padding:11px 20px;border-radius:var(--r-s);font-weight:700;transition:background var(--t-fast) var(--curve)}
+.pv-link:hover{background:var(--olive-fill)}
+/* подвал */
+.pv-foot{margin-top:var(--rhythm);border-top:1px solid var(--line);padding:30px 0 46px;font-size:var(--z-small);color:var(--ink-3)}
+.pv-foot .pv-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px}
+.pv-foot b{color:var(--ink-2);font-weight:700;font-family:var(--pv-title)}
+.pv-foot a{color:var(--ink-2)}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","@id":"https://proverennye-igry338.github.io/#page","headline":"Проверенные игры 2026: пять ситуаций и шаг проверки для каждой","description":"Как самому проверить игру в 2026 году: нет сертификата в описании, RTP в окне «i» ниже витринного, клиент грузится с чужого домена, демо не совпадает со ставкой на деньги, игра в списке клонов — что значит и что делать.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Organization","name":"Редакция «Разбор тайтла»"},"publisher":{"@type":"Organization","name":"Разбор тайтла"},"mainEntityOfPage":"https://proverennye-igry338.github.io/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","@id":"https://proverennye-igry338.github.io/#faq","mainEntity":[
+{"@type":"Question","name":"Как понять, что у игры есть сертификат, а не картинка печати?","acceptedAnswer":{"@type":"Answer","text":"Настоящая печать лаборатории — это не логотип в подвале, а активная ссылка на документ или запись в реестре. У eCOGRA, iTech Labs, GLI и BMM Testlabs печать ведёт на сертификат с номером, датой, названием игры или движка ГСЧ и сроком действия. Проверка занимает минуту: нажмите на логотип и посмотрите, открывается ли документ на домене самой лаборатории, совпадает ли в нём название игры и не истёк ли срок. Если логотип не кликается, ведёт на главную страницу оператора или на чужой документ по другой игре — считайте, что сертификата нет, независимо от того, как красиво нарисована печать."}},
+{"@type":"Question","name":"Что делать, если RTP в окне «i» ниже, чем указано на витрине?","acceptedAnswer":{"@type":"Answer","text":"Верьте окну «i» внутри игры, а не витрине и не обзору: там показан теоретический RTP именно той сборки, что запущена у этого оператора. Многие провайдеры поставляют игру линейкой версий — например 96, 94, 92 и ниже процентов, — и оператор ставит любую. Разрыв в два–шесть процентных пунктов между витринным и фактическим числом означает урезанную сборку, а не ошибку. Шаг такой: снимите скриншот окна «i» с числом и датой, сверьте с опубликованным провайдером диапазоном сборок, и если разница велика — выбирайте оператора, у которого стоит максимальная версия. Это не обман по закону, но прямой проигрыш в скорости слива банка."}},
+{"@type":"Question","name":"Почему важно, с какого домена грузится сама игра?","acceptedAnswer":{"@type":"Answer","text":"Честный клиент игры загружается с инфраструктуры провайдера или его CDN, а казино встраивает игру через iframe. Если в адресе кадра стоит посторонний домен, не принадлежащий ни оператору, ни провайдеру, это признак пересобранного клиента: между вами и сервером провайдера появляется прослойка, которая теоретически может подменять параметры, графику или сам результат на стороне. Проверить источник можно через меню «Просмотреть код» браузера: найдите тег iframe запущенной игры и посмотрите на домен в атрибуте src. Домен провайдера или его явного CDN — норма; незнакомый хост рядом с игрой на деньги — повод закрыть её и не пополнять счёт."}},
+{"@type":"Question","name":"Чем демо-режим отличается от игры на реальные деньги и совпадают ли они?","acceptedAnswer":{"@type":"Answer","text":"У честного провайдера демо и игра на деньги используют один и тот же генератор случайных чисел и одну математику: отличается только источник баланса — виртуальный против реального. Поэтому серия в демо ничего не гарантирует на деньгах, но и не должна систематически отличаться. Насторожить должны два случая: «сладкое демо», где бесплатная версия заметно щедрее платной, и социальное казино или «фан-мани», где выигрыш нельзя вывести вовсе. Подтверждается совпадение движков двумя вещами: одинаковым RTP в окне «i» у обеих версий и механикой provably fair, если провайдер её поддерживает, — опубликованным хешем серверного зерна, который позволяет пересчитать результат раунда независимо от казино."}},
+{"@type":"Question","name":"Как проверить, что игра не клон известного слота?","acceptedAnswer":{"@type":"Answer","text":"Клон — это подделка под популярную игру: похожее название и оформление, но другой движок и непроверенный ГСЧ. Сверяйте три вещи. Первое — студию-разработчика: у оригинала она указана в окне «i» и совпадает с сайтом провайдера, у клона — отсутствует или названа незнакомым именем. Второе — точное название и максимальный выигрыш по paytable: у клонов часто занижен max win и изменена таблица выплат. Третье — наличие игры в официальном каталоге провайдера и в списке сертифицированных игр лаборатории. Если студия не подтверждается, а в каталоге провайдера такой игры нет, перед вами копия — её результат не проверен никем, и доверять ему нельзя."}},
+{"@type":"Question","name":"Что из проверки игры относится к выводу денег и рублёвой кассе?","acceptedAnswer":{"@type":"Answer","text":"Проверка игры и проверка кассы — разные задачи, и их полезно не смешивать. Целостность игры (сертификат, RTP сборки, домен клиента, честный ГСЧ) отвечает за то, что результат раунда не подкручен. Вывод выигрыша зависит уже от кассы оператора: лимитов, верификации KYC, рельсы (СБП, карта МИР, криптосеть) и условий бонуса, если выигрыш набран на бонусные деньги. Даже у идеально проверенной игры выплату на рубли может задержать антифрод банка по 115-ФЗ или урезать предел вывода с бонуса. Поэтому «проверенные игры на деньги» — это две проверки подряд: сначала целостность самой игры, потом условия и сроки кассы."}},
+{"@type":"Question","name":"Можно ли доверять надписи «проверено» и значкам на странице оператора?","acceptedAnswer":{"@type":"Answer","text":"Слова «проверено», «честно», «лицензировано» и значки без ссылок — это оформление, а не доказательство. Проверяемый знак всегда ведёт к первоисточнику: печать лаборатории — к сертификату с номером, упоминание лицензии — к записи в реестре регулятора (Кюрасао, MGA), название игры — к каталогу провайдера. Если за надписью или значком нет активной ссылки на внешний документ, который можно открыть и сверить, считайте их рекламным украшением. Доказывает не слово на странице, а запись в независимом источнике."}},
+{"@type":"Question","name":"Нужны ли лаборатория и сертификат, если у оператора есть лицензия?","acceptedAnswer":{"@type":"Answer","text":"Лицензия регулятора и сертификат лаборатории закрывают разные вопросы. Лицензия (например, Кюрасао или MGA) говорит о том, что у оператора есть разрешение и к нему в принципе можно предъявить претензию. Сертификат лаборатории (eCOGRA, iTech Labs, GLI, BMM) подтверждает, что генератор случайных чисел конкретной игры прошёл независимое тестирование по стандарту вроде GLI-19 и заявленная отдача соответствует математике. Лицензия без сертификатов игр оставляет вопрос честности раунда открытым, а сертификат без лицензии — вопрос, кому жаловаться при отказе в выплате. Проверять стоит оба, и для российского игрока важно помнить, что офшорные операторы работают вне 244-ФЗ и правовой защиты в России не дают."}},
+{"@type":"Question","name":"Сколько времени занимает проверка одной игры перед ставкой на деньги?","acceptedAnswer":{"@type":"Answer","text":"Полный обход по пяти ситуациям укладывается в три–пять минут, и большую часть из них можно сделать в демо-режиме до первого депозита. Открыть окно «i» и записать RTP и студию — около минуты. Проверить печать лаборатории кликом по логотипу — минута. Посмотреть домен в iframe через код страницы — минута. Сверить название и студию с каталогом провайдера — минута. Это разовая проверка на игру: один раз убедились в целостности — дальше следите только за кассой и своими лимитами. Время окупается тем, что исключает самые дешёвые способы вас обмануть ещё до того, как на счёт попали деньги."}}
+]}
+</script>
+</head>
+<body>
+
+<header class="pv-top">
+ <div class="pv-row">
+  <a class="pv-logo" href="#top" aria-label="Разбор тайтла — в начало">
+   <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="7" y="7" width="50" height="50" rx="11" fill="none" stroke="currentColor" stroke-width="3.6"/><path d="M19 33l8 8 17-19" fill="none" stroke="var(--olive)" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+   Разбор тайтла
+  </a>
+  <nav class="pv-menu" aria-label="Разделы">
+   <a href="#cases">Пять ситуаций</a>
+   <a href="#cert">Сертификат</a>
+   <a href="#rtp">Отдача в «i»</a>
+   <a href="#origin">Домен игры</a>
+   <a href="#demo">Демо и деньги</a>
+   <a href="#clone">Клоны</a>
+   <a href="#kassa">Касса</a>
+   <a href="#faq">Вопросы</a>
+  </nav>
+  <button class="pv-skin" type="button" id="pv-skin-btn" aria-label="Переключить тему">тема</button>
+ </div>
+</header>
+
+<main class="pv-wrap" id="top">
+
+<section class="pv-head">
+ <p class="pv-date"><i></i><b>Обновлено 1 октября 2026</b> · Москва · редакция «Разбор тайтла»</p>
+ <h1>Проверенные игры 2026: пять ситуаций и шаг проверки для каждой</h1>
+ <p class="pv-lead">Проверить можно не репутацию казино вообще, а конкретный тайтл, в который вы садитесь. У игры есть несколько мест, где подделка или урезание видны за минуту: описание с печатью лаборатории, число отдачи в окне «i», домен, с которого грузится клиент, поведение демо рядом со ставкой на деньги и совпадение названия с оригиналом провайдера. Ниже — пять частых ситуаций, и для каждой разобрано, что сигнал значит и каким одним шагом он закрывается.</p>
+ <div class="pv-key" aria-hidden="true">
+  <span class="k-ok">норма игры</span>
+  <span class="k-mid">требует сверки</span>
+  <span class="k-no">играть нельзя</span>
+ </div>
+</section>
+
+<section class="pv-sec" id="cases">
+ <span class="pv-no">СИТУАЦИИ · 01</span>
+ <h2>Пять ситуаций с конкретной игрой: что значит сигнал и каким шагом он закрывается</h2>
+ <div class="pv-sum"><p><b>Целостность игры проверяется не отзывами, а пятью точками в самом тайтле.</b> Нет сертификата в описании, отдача в окне «i» ниже витринной, клиент грузится с постороннего домена, демо расходится со ставкой на деньги, название совпадает с известным слотом, но студия чужая — каждая из этих ситуаций имеет понятный смысл и один проверочный шаг. Таблица сводит их в один взгляд.</p></div>
+ <p>Запрос на проверенную игру обычно звучит как поиск списка, которому можно верить. Списки же собирают люди с коммерческим интересом: рейтинг оплачивается, значки рисуются, а «проверено» на баннере не ведёт никуда. Переносить доверие с чужого списка на собственную проверку несложно, потому что любой слот устроен одинаково у всех операторов: один и тот же движок провайдера, одно и то же информационное окно, одна и та же механика сертификации. Разница между честной подачей и урезанной спрятана в нескольких полях, и каждое поле доступно игроку до того, как он внёс деньги.</p>
+ <p>Каждая из пяти ситуаций ниже сводится к одному разрыву — между тем, что заявлено на витрине, и тем, что показывает сама игра. Витрина обещает отдачу, честность и «лучшие проверенные игры»; окно «i» показывает реальную сборку, студию и параметры. Там, где эти два слоя совпадают, проверять дальше нечего. Там, где расходятся, появляется сигнал, и важно не паниковать, а сделать ровно один шаг: открыть документ, сверить число, посмотреть домен, сравнить с каталогом. Остальные главы разбирают ситуации по одной; здесь — общая карта с оценкой, насколько часто случай встречается и сколько стоит его пропустить.</p>
+ <figure class="pv-fig">
+  <svg viewBox="0 0 720 420" role="img" aria-labelledby="ov-t ov-d">
+   <title id="ov-t">Пять ситуаций: частота и цена ошибки при пропуске</title>
+   <desc id="ov-d">Для каждой из пяти ситуаций показаны две полосы — как часто она встречается и насколько дорого обходится, если её не заметить, по шкале от одного до десяти.</desc>
+   <g stroke="var(--line)" stroke-width="1"><line x1="250" y1="30" x2="250" y2="372"/></g>
+   <g stroke="var(--line)" stroke-dasharray="3 5"><line x1="338" y1="30" x2="338" y2="372"/><line x1="426" y1="30" x2="426" y2="372"/><line x1="514" y1="30" x2="514" y2="372"/><line x1="602" y1="30" x2="602" y2="372"/><line x1="690" y1="30" x2="690" y2="372"/></g>
+   <g font-size="12" fill="var(--ink-3)"><text x="250" y="390" text-anchor="middle">0</text><text x="338" y="390" text-anchor="middle">2</text><text x="426" y="390" text-anchor="middle">4</text><text x="514" y="390" text-anchor="middle">6</text><text x="602" y="390" text-anchor="middle">8</text><text x="690" y="390" text-anchor="middle">10</text><text x="470" y="410" text-anchor="middle" font-size="13">Баллы 1–10 →</text></g>
+   <!-- строки: блок 70px от y=40; бар1 +0 h16; бар2 +20 h16; x=250, ед=44 -->
+   <g font-size="13" fill="var(--ink-2)">
+    <text x="240" y="54" text-anchor="end">Нет сертификата</text>
+    <rect x="250" y="42" width="308" height="16" rx="2" fill="var(--d2)"/>
+    <rect x="250" y="62" width="352" height="16" rx="2" fill="var(--d1)"/>
+    <text x="240" y="124" text-anchor="end">Отдача ниже в «i»</text>
+    <rect x="250" y="112" width="352" height="16" rx="2" fill="var(--d2)"/>
+    <rect x="250" y="132" width="264" height="16" rx="2" fill="var(--d1)"/>
+    <text x="240" y="194" text-anchor="end">Чужой домен</text>
+    <rect x="250" y="182" width="176" height="16" rx="2" fill="var(--d2)"/>
+    <rect x="250" y="202" width="396" height="16" rx="2" fill="var(--d1)"/>
+    <text x="240" y="264" text-anchor="end">Демо ≠ деньги</text>
+    <rect x="250" y="252" width="264" height="16" rx="2" fill="var(--d2)"/>
+    <rect x="250" y="272" width="308" height="16" rx="2" fill="var(--d1)"/>
+    <text x="240" y="334" text-anchor="end">Игра из клонов</text>
+    <rect x="250" y="322" width="132" height="16" rx="2" fill="var(--d2)"/>
+    <rect x="250" y="342" width="396" height="16" rx="2" fill="var(--d1)"/>
+   </g>
+  </svg>
+  <div class="pv-leg"><span><i style="background:var(--d2)"></i>как часто встречается, 1–10</span><span><i style="background:var(--d1)"></i>цена ошибки при пропуске, 1–10</span></div>
+  <figcaption><b>Оценка редакции «Разбор тайтла»</b>, октябрь 2026, расчётная модель по методике ниже. Частота — как часто ситуация попадается в играх у офшорных операторов, цена ошибки — ущерб, если её не заметить. Числа совпадают с таблицей.</figcaption>
+  <div class="pv-scroll pv-wide">
+   <table>
+    <caption>Пять ситуаций с игрой: ситуация → смысл → проверка → шаг</caption>
+    <thead><tr><th>Ситуация</th><th class="num">Частота</th><th class="num">Цена</th><th>Что это значит</th><th>Как проверить</th><th>Шаг</th></tr></thead>
+    <tbody>
+     <tr><td>В описании игры нет сертификата</td><td class="num">7</td><td class="num">8</td><td>Честность ГСЧ никем не подтверждена</td><td>Клик по печати лаборатории → документ с номером</td><td><span class="pv-tag t-no">✕ не играть</span></td></tr>
+     <tr><td>RTP в окне «i» ниже витринного</td><td class="num">8</td><td class="num">6</td><td>Оператор поставил урезанную сборку</td><td>Сверить число в «i» с диапазоном провайдера</td><td><span class="pv-tag t-mid">◐ сменить версию</span></td></tr>
+     <tr><td>Клиент грузится с чужого домена</td><td class="num">4</td><td class="num">9</td><td>Между вами и провайдером лишняя прослойка</td><td>Домен в src у iframe через код страницы</td><td><span class="pv-tag t-no">✕ закрыть</span></td></tr>
+     <tr><td>Демо ведёт себя иначе, чем деньги</td><td class="num">6</td><td class="num">7</td><td>«Сладкое демо» или фан-мани без вывода</td><td>Одинаковый RTP в «i»; provably fair</td><td><span class="pv-tag t-mid">◐ сверить</span></td></tr>
+     <tr><td>Игра есть в списке клонов</td><td class="num">3</td><td class="num">9</td><td>Подделка под слот с подменённым ГСЧ</td><td>Студия и max win против каталога провайдера</td><td><span class="pv-tag t-no">✕ не играть</span></td></tr>
+    </tbody>
+   </table>
+  </div>
+ </figure>
+ <p>Две ситуации из пяти — отсутствие сертификата и клон — закрывают игру полностью: подтвердить честность раунда нечем, и садиться в неё на деньги незачем. Отдача ниже витринной и расхождение демо с деньгами мягче: слот может быть честным, но невыгодным или двусмысленным, и здесь шаг — не бегство, а сверка и выбор оператора с нормальной сборкой. Посторонний домен редок, но дороже всех: он ставит под вопрос сам результат, поэтому цена ошибки максимальная при низкой частоте. Дальше каждая ситуация разобрана отдельно, с собственной таблицей и проверкой.</p>
+</section>
+
+<section class="pv-sec" id="cert">
+ <span class="pv-no">СИТУАЦИЯ · 02</span>
+ <h2>Сертификат в описании игры: печать лаборатории, её номер и живая ссылка в реестр</h2>
+ <div class="pv-sum"><p><b>Печать лаборатории доказывает честность игры только тогда, когда это активная ссылка на документ с номером, а не картинка в подвале.</b> У eCOGRA, iTech Labs, GLI и BMM Testlabs сертификат открывается на домене самой лаборатории и называет игру или движок ГСЧ, срок и стандарт. Логотип без ссылки — украшение.</p></div>
+ <p>Честность игры держится на генераторе случайных чисел (ГСЧ): алгоритме, который выдаёт результат каждого раунда независимо от прошлого и от суммы ставки. Самому игроку заглянуть внутрь ГСЧ нельзя, поэтому его тестируют независимые лаборатории. Четыре имени встречаются чаще других: eCOGRA, iTech Labs, Gaming Laboratories International (GLI) и BMM Testlabs. Они прогоняют генератор на миллионах симуляций, проверяют равномерность распределения и соответствие заявленной отдачи математике конкретного слота, а затем выдают сертификат по стандарту — для онлайн-ГСЧ это чаще всего GLI-19. Документ привязан к конкретной игре или к сертифицированному движку провайдера и имеет срок действия.</p>
+ <p>Отсюда разница между настоящей печатью и нарисованной. Настоящая ведёт к документу: клик по логотипу открывает PDF или страницу в реестре на домене лаборатории, где указаны название игры, провайдер, номер сертификата, дата и срок. Нарисованная печать — это тот же логотип, но без ссылки, со ссылкой на главную страницу оператора или на чужой сертификат по другой игре. Логотип скопировать может кто угодно; запись в реестре лаборатории подделать нельзя. Поэтому проверка сводится к одному движению — нажать на знак и посмотреть, куда он ведёт.</p>
+ <div class="pv-scroll">
+  <table>
+   <caption>Печать в описании игры: что видно → что значит → чем подтвердить</caption>
+   <thead><tr><th>Что в описании</th><th>Что это значит</th><th>Чем подтвердить</th><th>Сигнал</th></tr></thead>
+   <tbody>
+    <tr><td>Логотип лаборатории не кликается</td><td>Картинка без документа за ней</td><td>Нет документа — нет подтверждения</td><td><span class="pv-tag t-no">✕ пусто</span></td></tr>
+    <tr><td>Клик ведёт на главную оператора</td><td>Ссылку поставили «для вида»</td><td>Сертификат по игре не открывается</td><td><span class="pv-tag t-no">✕ пусто</span></td></tr>
+    <tr><td>Открывается сертификат по другой игре</td><td>Чужой документ выдают за свой</td><td>Сверить название игры в документе</td><td><span class="pv-tag t-no">✕ подмена</span></td></tr>
+    <tr><td>Сертификат есть, но срок истёк</td><td>Тест был, но давно не обновлялся</td><td>Дата и срок действия в документе</td><td><span class="pv-tag t-mid">◐ устарел</span></td></tr>
+    <tr><td>Клик открывает документ с номером и игрой</td><td>ГСЧ протестирован независимо</td><td>Номер, игра, стандарт на домене лаборатории</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+   </tbody>
+  </table>
+ </div>
+ <p>У сертификации есть нюанс, который полезно понимать, чтобы не требовать невозможного. Лаборатория чаще сертифицирует не каждый тайтл по отдельности, а движок ГСЧ провайдера целиком: одна проверка покрывает весь модельный ряд студии. Поэтому нормально, когда печать ведёт на сертификат генератора провайдера, а не на отдельный документ по одному слоту, — важно, чтобы в документе был назван именно этот провайдер и действующий срок. Отдельно сертифицируют расчёт отдачи: протокол RTP подтверждает, что заявленный процент соответствует математике конкретной игры. Эти два документа — на ГСЧ и на отдачу — вместе и означают «проверенную» игру в строгом смысле слова.</p>
+ <p>Если печати нет вовсе, вывод простой: честность раунда не подтверждена никем, кроме самого оператора. Это не всегда означает прямой обман — встречаются честные слоты без видимого сертификата, — но проверить их нельзя, а значит, ставить на них деньги означает верить на слово стороне, которая на вашем проигрыше зарабатывает. Шаг здесь жёсткий: нет документа — нет ставки. Лучше потратить минуту на поиск сертифицированной версии той же игры у другого оператора, чем играть вслепую.</p>
+ <details id="q-cert">
+  <summary>Как понять, что у игры есть сертификат, а не картинка печати?</summary>
+  <div class="pv-ans"><p>Настоящая печать лаборатории — это не логотип в подвале, а активная ссылка на документ или запись в реестре. У eCOGRA, iTech Labs, GLI и BMM Testlabs печать ведёт на сертификат с номером, датой, названием игры или движка ГСЧ и сроком действия. Проверка занимает минуту: нажмите на логотип и посмотрите, открывается ли документ на домене самой лаборатории, совпадает ли в нём название игры и не истёк ли срок. Если логотип не кликается, ведёт на главную страницу оператора или на чужой документ по другой игре — считайте, что сертификата нет, независимо от того, как красиво нарисована печать.</p></div>
+ </details>
+</section>
+
+<section class="pv-sec" id="rtp">
+ <span class="pv-no">СИТУАЦИЯ · 03</span>
+ <h2>Отдача в окне «i» ниже витринной: как читать RTP запущенной сборки</h2>
+ <div class="pv-sum"><p><b>Один и тот же слот существует в нескольких версиях отдачи, и оператор ставит любую — поэтому верить нужно числу в окне «i» внутри игры, а не витрине и не обзору.</b> Разрыв в два–шесть процентных пунктов между заявленным и фактическим RTP означает урезанную сборку. Шаг — скриншот «i» и выбор оператора с максимальной версией.</p></div>
+ <p>Отдача (RTP, return to player) — теоретический процент, который слот возвращает ставками на бесконечной дистанции. Ключевое слово — «конфигурируемый»: провайдеры поставляют многие тайтлы линейкой сборок, например 96, 94, 92 и ниже процентов, вплоть до 90-процентных версий. Оператор лицензирует и запускает ту, что считает нужной. Два казино с одной и той же игрой на витрине могут крутить её на разной отдаче, и внешне версии неотличимы: та же графика, те же символы, тот же экран. Различает их только параметр в информационном окне — кнопка «i» или paytable внутри самой игры.</p>
+ <p>Поэтому витринное «отдача 96,5 %, проверенные игры» — обещание без адреса. Откуда это число? С сайта провайдера, где указана максимальная версия линейки; из чужого скриншота другого оператора; или просто из рекламного текста. Фактическую отдачу запущенной сборки показывает окно «i», и только оно привязано к тому, во что вы сейчас играете. Открыть его можно и в демо-режиме, до первого депозита. Если рядом приложен протокол независимой лаборатории — eCOGRA, iTech Labs или GLI, — он подтверждает, что заявленная отдача соответствует математике, но относится к конкретной версии, а не к названию игры вообще.</p>
+ <figure class="pv-fig">
+  <svg viewBox="0 0 720 320" role="img" aria-labelledby="rt-t rt-d">
+   <title id="rt-t">Заявленная отдача против фактической в окне «i» для пяти игр</title>
+   <desc id="rt-d">Для пяти игр показана заявленная на витрине отдача и фактическая из окна «i» на обрезанной шкале от 88 до 100 процентов; разрыв подписан.</desc>
+   <g stroke="var(--line)" stroke-dasharray="3 5"><line x1="150" y1="22" x2="150" y2="268"/><line x1="240" y1="22" x2="240" y2="268"/><line x1="330" y1="22" x2="330" y2="268"/><line x1="420" y1="22" x2="420" y2="268"/><line x1="510" y1="22" x2="510" y2="268"/><line x1="600" y1="22" x2="600" y2="268"/><line x1="690" y1="22" x2="690" y2="268"/></g>
+   <g font-size="12" fill="var(--ink-3)"><text x="150" y="288" text-anchor="middle">88</text><text x="240" y="288" text-anchor="middle">90</text><text x="330" y="288" text-anchor="middle">92</text><text x="420" y="288" text-anchor="middle">94</text><text x="510" y="288" text-anchor="middle">96</text><text x="600" y="288" text-anchor="middle">98</text><text x="690" y="288" text-anchor="middle">100</text><text x="420" y="308" text-anchor="middle" font-size="13">Теоретическая отдача, % →</text></g>
+   <!-- x(val)=150+(val-88)*45 ; строки по 50 от y=36 -->
+   <g font-size="13">
+    <text x="144" y="52" text-anchor="end" fill="var(--ink-2)">Фруктовый 3×3</text>
+    <rect x="150" y="40" width="360" height="9" rx="2" fill="var(--sheet-2)"/><rect x="150" y="40" width="360" height="18" rx="2" fill="var(--good)"/>
+    <line x1="510" y1="36" x2="510" y2="62" stroke="var(--ink-2)" stroke-width="2"/><text x="520" y="54" fill="var(--good)" font-weight="600">0,0</text>
+    <text x="144" y="102" text-anchor="end" fill="var(--ink-2)">Мегавейс</text>
+    <rect x="150" y="90" width="382.5" height="9" rx="2" fill="var(--sheet-2)"/><rect x="150" y="90" width="279" height="18" rx="2" fill="var(--warn)"/>
+    <line x1="532.5" y1="86" x2="532.5" y2="112" stroke="var(--ink-2)" stroke-width="2"/><text x="542" y="104" fill="var(--warn)" font-weight="600">−2,3</text>
+    <text x="144" y="152" text-anchor="end" fill="var(--ink-2)">Джекпот-слот</text>
+    <rect x="150" y="140" width="315" height="9" rx="2" fill="var(--sheet-2)"/><rect x="150" y="140" width="180" height="18" rx="2" fill="var(--warn)"/>
+    <line x1="465" y1="136" x2="465" y2="162" stroke="var(--ink-2)" stroke-width="2"/><text x="475" y="154" fill="var(--warn)" font-weight="600">−3,0</text>
+    <text x="144" y="202" text-anchor="end" fill="var(--ink-2)">С покупкой бонуса</text>
+    <rect x="150" y="190" width="378" height="9" rx="2" fill="var(--sheet-2)"/><rect x="150" y="190" width="112.5" height="18" rx="2" fill="var(--bad)"/>
+    <line x1="528" y1="186" x2="528" y2="212" stroke="var(--ink-2)" stroke-width="2"/><text x="538" y="204" fill="var(--bad)" font-weight="600">−5,9</text>
+    <text x="144" y="252" text-anchor="end" fill="var(--ink-2)">Карточная</text>
+    <rect x="150" y="240" width="517.5" height="9" rx="2" fill="var(--sheet-2)"/><rect x="150" y="240" width="517.5" height="18" rx="2" fill="var(--good)"/>
+    <line x1="667.5" y1="236" x2="667.5" y2="262" stroke="var(--ink-2)" stroke-width="2"/><text x="612" y="234" fill="var(--good)" font-weight="600">0,0</text>
+   </g>
+  </svg>
+  <div class="pv-leg"><span><i style="background:var(--sheet-2)"></i>заявлено на витрине</span><span><i style="background:var(--olive)"></i>фактически в окне «i»</span><span>| вертикальная метка — заявленное число</span></div>
+  <figcaption><b>Расчётный пример</b> пяти игр; конкретные проценты у провайдеров различаются. Шкала обрезана до 88–100 %, длина полосы пропорциональна отдаче, разрыв подписан в процентных пунктах. Значения совпадают с таблицей.</figcaption>
+  <div class="pv-scroll">
+   <table>
+    <caption>Заявлено против окна «i»: те же числа, что на графике</caption>
+    <thead><tr><th>Игра (роль)</th><th class="num">Заявлено, %</th><th class="num">В окне «i», %</th><th class="num">Разрыв, п.п.</th><th>Статус</th></tr></thead>
+    <tbody>
+     <tr><td>Фруктовый 3×3</td><td class="num">96,0</td><td class="num">96,0</td><td class="num">0,0</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+     <tr><td>Мегавейс</td><td class="num">96,5</td><td class="num">94,2</td><td class="num">2,3</td><td><span class="pv-tag t-mid">◐ урезана</span></td></tr>
+     <tr><td>Джекпот-слот</td><td class="num">95,0</td><td class="num">92,0</td><td class="num">3,0</td><td><span class="pv-tag t-mid">◐ урезана</span></td></tr>
+     <tr><td>С покупкой бонуса</td><td class="num">96,4</td><td class="num">90,5</td><td class="num">5,9</td><td><span class="pv-tag t-no">✕ избегать</span></td></tr>
+     <tr><td>Карточная</td><td class="num">99,5</td><td class="num">99,5</td><td class="num">0,0</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+    </tbody>
+   </table>
+  </div>
+ </figure>
+ <p>Отдачу легко перепутать с волатильностью, и реклама путает их намеренно. RTP отвечает на вопрос, сколько возвращается ставками на огромной дистанции; волатильность — насколько рвано распределены выплаты по пути. Два слота с одинаковой отдачей 96 % ощущаются противоположно: одна капает мелочью почти каждый спин, другая молчит полсотни вращений, а потом возвращает всё одним множителем. Хит-рейт — доля выигрышных спинов — дополняет картину. Эти три числа провайдер указывает в том же окне «i», и опираться стоит на них, а не на обещание «высокой отдачи» на витрине.</p>
+ <p>Разрыв между максимальной и урезанной версией доходит до шести процентных пунктов, и на дистанции это заметная разница в скорости, с которой тает банк. «На ощупь» игрок её не поймает: волатильность и хит-рейт у разных сборок одинаковые, отличается только долгосрочный возврат. Поэтому единственный надёжный шаг — снять скриншот окна «i» с числом и датой, сверить с диапазоном сборок, который провайдер публикует на своём сайте, и, если фактическая версия сильно ниже максимальной, перейти к оператору с нормальной сборкой. Это законная, но невыгодная практика, и защищает от неё только собственная сверка.</p>
+ <details id="q-rtp">
+  <summary>Что делать, если RTP в окне «i» ниже, чем указано на витрине?</summary>
+  <div class="pv-ans"><p>Верьте окну «i» внутри игры, а не витрине и не обзору: там показан теоретический RTP именно той сборки, что запущена у этого оператора. Многие провайдеры поставляют игру линейкой версий — например 96, 94, 92 и ниже процентов, — и оператор ставит любую. Разрыв в два–шесть процентных пунктов между витринным и фактическим числом означает урезанную сборку, а не ошибку. Шаг такой: снимите скриншот окна «i» с числом и датой, сверьте с опубликованным провайдером диапазоном сборок, и если разница велика — выбирайте оператора, у которого стоит максимальная версия. Это не обман по закону, но прямой проигрыш в скорости слива банка.</p></div>
+ </details>
+</section>
+
+<section class="pv-sec" id="origin">
+ <span class="pv-no">СИТУАЦИЯ · 04</span>
+ <h2>Откуда грузится клиент игры: домен провайдера против постороннего хоста</h2>
+ <div class="pv-sum"><p><b>Честная игра загружается с инфраструктуры провайдера или его CDN и встраивается в казино через iframe — посторонний домен в адресе кадра означает лишнюю прослойку между вами и сервером провайдера.</b> Проверяется это за минуту через код страницы: домен в атрибуте src у iframe должен принадлежать провайдеру, а не неизвестному хосту.</p></div>
+ <p>Игра в онлайн-казино — не часть сайта оператора, а внешний модуль. Клиент (графика, логика, обращения к серверу) живёт на инфраструктуре провайдера или на его сети доставки контента (CDN), а казино показывает его в прямоугольнике-кадре — теге iframe. Такова нормальная архитектура: оператор не держит математику слота у себя, он арендует её и встраивает. Результат каждого раунда считается на сервере провайдера, а клиент только рисует барабаны и показывает исход. Поэтому домен, с которого грузится кадр, — это адрес настоящего поставщика игры.</p>
+ <p>Проблема возникает, когда между игроком и провайдером встаёт кто-то третий. Если клиент пересобран и размещён на постороннем хосте, появляется прослойка, которая технически способна подменить параметры запуска, графику или данные, которыми обмениваются клиент и сервер. Это не массовая, но самая дорогая по последствиям ситуация: под вопросом оказывается сам результат, а не только отдача. Честный оператор встраивает клиент с домена провайдера или его явного CDN; незнакомый домен рядом с игрой на деньги — повод насторожиться сильнее, чем из-за любой сборки RTP.</p>
+ <div class="pv-scroll">
+  <table>
+   <caption>Источник клиента игры: что в адресе → что значит → шаг</caption>
+   <thead><tr><th>Домен в src у iframe</th><th>Что это значит</th><th>Шаг</th><th>Сигнал</th></tr></thead>
+   <tbody>
+    <tr><td>Домен провайдера игры</td><td>Клиент грузится напрямую от поставщика</td><td>Норма, можно играть</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+    <tr><td>CDN провайдера или агрегатора</td><td>Стандартная доставка контента</td><td>Сверить, что CDN принадлежит провайдеру</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+    <tr><td>Поддомен самого оператора</td><td>Встройка через свой прокси — спорно</td><td>Уточнить провайдера в окне «i»</td><td><span class="pv-tag t-mid">◐ сверить</span></td></tr>
+    <tr><td>Незнакомый сторонний домен</td><td>Лишняя прослойка у игры на деньги</td><td>Закрыть игру, счёт не пополнять</td><td><span class="pv-tag t-no">✕ закрыть</span></td></tr>
+   </tbody>
+  </table>
+ </div>
+ <p>Проверить источник проще, чем кажется, и для этого не нужны инструменты сверх браузера. Запустите тайтл в демо-режиме, вызовите меню «Просмотреть код» (правый клик по странице или сочетание клавиш разработчика), найдите в разметке тег iframe запущенной игры и посмотрите значение атрибута src — там и стоит домен. Второй способ грубее, но быстрее: кликнуть правой кнопкой по области игры, и если всплывёт пункт «Об этом кадре» с адресом, прочитать домен прямо оттуда. Сверять домен нужно не с памятью, а с сайтом провайдера, чьё имя указано в окне «i»: совпадает — норма, незнакомый хост — сигнал.</p>
+ <p>Отдельно стоит отличать посторонний домен от обычной сети доставки. Крупные провайдеры и агрегаторы раздают клиент через свои CDN, и адрес там может выглядеть непривычно, оставаясь легитимным. Признак нормы — домен принадлежит провайдеру или его известному агрегатору, упомянут в окне «i» или в описании игры. Признак тревоги — хост, не связанный ни с оператором, ни с провайдером, особенно свежерегистрированный или маскирующийся под известное имя лишней буквой. В сомнении шаг один: не пополнять счёт и искать ту же игру там, где она грузится с домена поставщика.</p>
+ <details id="q-origin">
+  <summary>Почему важно, с какого домена грузится сама игра?</summary>
+  <div class="pv-ans"><p>Честный клиент игры загружается с инфраструктуры провайдера или его CDN, а казино встраивает игру через iframe. Если в адресе кадра стоит посторонний домен, не принадлежащий ни оператору, ни провайдеру, это признак пересобранного клиента: между вами и сервером провайдера появляется прослойка, которая теоретически может подменять параметры, графику или сам результат на стороне. Проверить источник можно через меню «Просмотреть код» браузера: найдите тег iframe запущенной игры и посмотрите на домен в атрибуте src. Домен провайдера или его явного CDN — норма; незнакомый хост рядом с игрой на деньги — повод закрыть её и не пополнять счёт.</p></div>
+ </details>
+</section>
+
+<section class="pv-sec" id="demo">
+ <span class="pv-no">СИТУАЦИЯ · 05</span>
+ <h2>Демо и ставка на деньги: один ли движок и чем это подтверждается</h2>
+ <div class="pv-sum"><p><b>У честного провайдера демо и игра на деньги крутятся на одном генераторе и одной математике — отличается только источник баланса.</b> Насторожить должны «сладкое демо», где бесплатная версия щедрее платной, и фан-мани соцказино, где выигрыш нельзя вывести. Совпадение движков подтверждают одинаковый RTP в окне «i» и механика provably fair.</p></div>
+ <p>Демо-режим — это та же игра на виртуальном балансе: результат каждого спина считает тот же ГСЧ, что и на деньгах, а отличается только то, откуда берётся ставка. Поэтому демо полезно для проверки — в нём можно открыть окно «i», посмотреть студию, домен клиента и поведение бонусных функций, не рискуя деньгами, — но бесполезно как предсказание. Удачная серия в демо не повышает шансов на деньгах: раунды независимы, и прошлое на будущее не влияет. Это та самая ошибка игрока (gambler’s fallacy), на которой построены рассказы о «разогретом» автомате.</p>
+ <p>Опасны два отклонения от этого правила. Первое — «сладкое демо»: бесплатная версия настроена заметно щедрее платной, чтобы серия выигрышей подтолкнула к депозиту, после которого поведение слота меняется. Честный провайдер так не делает — движок один, — но пересобранный клиент на постороннем домене (см. ситуацию выше) технически может. Второе — социальное казино и фан-мани: ставки на внутренней валюте, которые нельзя вывести, выдаются за реальные, особенно в роликах блогеров. Выигрыш, который невозможно обналичить, выигрышем не является, и путать эти два режима — значит принимать рекламную картинку за результат.</p>
+ <div class="pv-scroll">
+  <table>
+   <caption>Демо против денег: что видно → что значит → как проверить</caption>
+   <thead><tr><th>Что наблюдается</th><th>Что это значит</th><th>Как проверить</th><th>Сигнал</th></tr></thead>
+   <tbody>
+    <tr><td>RTP в «i» одинаков в демо и на деньгах</td><td>Один движок и одна математика</td><td>Сверить число «i» в обоих режимах</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+    <tr><td>Опубликован хеш серверного зерна</td><td>Поддержка provably fair</td><td>Пересчитать раунд в верификаторе</td><td><span class="pv-tag t-ok">✓ норма</span></td></tr>
+    <tr><td>Демо заметно щедрее платной версии</td><td>Возможное «сладкое демо»</td><td>Сравнить окно «i» и домен клиента</td><td><span class="pv-tag t-no">✕ тревога</span></td></tr>
+    <tr><td>Пометка FUN, фан-мани, соцказино</td><td>Выигрыш нельзя вывести</td><td>Проверить вывод в кассе — его нет</td><td><span class="pv-tag t-no">✕ не деньги</span></td></tr>
+   </tbody>
+  </table>
+ </div>
+ <p>Есть способ подтвердить честность раунда арифметически, минуя доверие к оператору, — механика provably fair. Провайдер заранее публикует хеш серверного зерна (serverseed), игрок добавляет своё клиентское зерно, а после раунда серверное зерно раскрывается, и результат можно пересчитать независимо, сверив с опубликованным ранее хешем по алгоритму вроде SHA-256. Если числа сходятся, раунд не был подкручен задним числом. Такую механику поддерживают далеко не все студии, чаще — крипто-ориентированные слоты и crash-форматы, но там, где она есть, это самое сильное из доступных игроку доказательств: не отзыв и не печать, а проверяемая арифметика.</p>
+ <p>Практический шаг с демо такой. Используйте бесплатный режим как площадку проверки до депозита: откройте окно «i» и запишите RTP и студию, посмотрите домен клиента, прогоните пару бонусных функций, чтобы понять механику. Затем, уже на минимальной реальной ставке, сверьте, что число в «i» не изменилось и слот ведёт себя так же. Расхождение RTP между режимами или внезапная смена поведения после депозита — сигнал закрыть игру. Совпадение же означает, что демо и деньги — одна игра, и дальше всё решают ваши лимиты и условия кассы.</p>
+ <details id="q-demo">
+  <summary>Чем демо-режим отличается от игры на реальные деньги и совпадают ли они?</summary>
+  <div class="pv-ans"><p>У честного провайдера демо и игра на деньги используют один и тот же генератор случайных чисел и одну математику: отличается только источник баланса — виртуальный против реального. Поэтому серия в демо ничего не гарантирует на деньгах, но и не должна систематически отличаться. Насторожить должны два случая: «сладкое демо», где бесплатная версия заметно щедрее платной, и социальное казино или «фан-мани», где выигрыш нельзя вывести вовсе. Подтверждается совпадение движков двумя вещами: одинаковым RTP в окне «i» у обеих версий и механикой provably fair, если провайдер её поддерживает, — опубликованным хешем серверного зерна, который позволяет пересчитать результат раунда независимо от казино.</p></div>
+ </details>
+</section>
+
+<section class="pv-sec" id="clone">
+ <span class="pv-no">СИТУАЦИЯ · 06</span>
+ <h2>Игра из списка клонов: подделка под известный слот и подменённый ГСЧ</h2>
+ <div class="pv-sum"><p><b>Клон — подделка под популярную игру: похожее название и оформление, но другой движок и непроверенный генератор.</b> Отличают оригинал от копии три сверки: студия-разработчик в окне «i», максимальный выигрыш по paytable и наличие игры в официальном каталоге провайдера. Если студия не подтверждается, а в каталоге игры нет — это копия.</p></div>
+ <p>У популярного слота есть узнаваемое имя и оформление, и это приманка для подделок. Клон повторяет название с небольшим искажением, копирует символы и фон, но внутри работает чужой движок с непроверенным ГСЧ. Внешне отличить тяжело — именно на это расчёт, — поэтому сверять нужно не картинку, а происхождение. Оригинал выпускает конкретная студия-разработчик, её имя стоит в окне «i» и совпадает с сайтом провайдера; у клона студия либо не названа, либо носит незнакомое имя, похожее на настоящее одной-двумя буквами.</p>
+ <p>Вторая сверка — математика по paytable. У клонов часто занижен максимальный выигрыш (max win) и перекроена таблица выплат: подделку собирают дешевле оригинала, и это видно в цифрах. Если у известного слота кэп выигрыша составляет, к примеру, x5000, а у «того же» слота в окне выплат стоит x1000, перед вами не он. Третья и самая надёжная сверка — каталог: у каждого провайдера на сайте есть список выпущенных игр, а у лаборатории — реестр сертифицированных. Настоящий тайтл есть в обоих; клона нет ни в одном, потому что провайдер его не выпускал, а лаборатория не тестировала.</p>
+ <div class="pv-scroll">
+  <table>
+   <caption>Оригинал против клона: признак → оригинал → клон</caption>
+   <thead><tr><th>Признак</th><th>Оригинал</th><th>Клон</th><th>Чем сверить</th></tr></thead>
+   <tbody>
+    <tr><td>Студия-разработчик</td><td>Названа в «i», совпадает с провайдером</td><td>Нет или незнакомое имя</td><td>Окно «i» и сайт провайдера</td></tr>
+    <tr><td>Название игры</td><td>Точное, как в каталоге</td><td>С искажением в одну-две буквы</td><td>Каталог провайдера</td></tr>
+    <tr><td>Максимальный выигрыш</td><td>Как в оригинальной paytable</td><td>Часто занижен</td><td>Paytable в игре против обзора провайдера</td></tr>
+    <tr><td>Наличие в каталоге провайдера</td><td>Есть</td><td>Нет</td><td>Список игр на сайте провайдера</td></tr>
+    <tr><td>Запись в реестре лаборатории</td><td>Есть сертификат</td><td>Отсутствует</td><td>Реестр сертифицированных игр</td></tr>
+   </tbody>
+  </table>
+ </div>
+ <p>Списки клонов и подделок ведут сами провайдеры и профильные сообщества: студии регулярно публикуют предупреждения о нелегальных копиях своих игр, потому что подделка бьёт по их репутации не меньше, чем по игроку. Поэтому, встретив незнакомую студию у знакомого с виду слота, полезно поискать её имя вместе со словом «клон» или «fake» — если игра засветилась в таких списках, это решает вопрос. Но и без списка хватает трёх сверок из таблицы: происхождение, математика, каталог. Все три доступны до депозита и занимают пару минут.</p>
+ <p>Опасность клона не в том, что он обязательно обманет в каждом раунде, а в том, что его честность не подтверждена никем. У оригинала есть студия, сертификат и репутация, которыми она дорожит; у копии нет ничего, кроме чужого оформления, и проверить её ГСЧ невозможно в принципе. Шаг здесь такой же жёсткий, как с отсутствием сертификата: студия не подтверждается и тайтла нет в каталоге провайдера — не играть. Тот же слот почти наверняка доступен в оригинале у оператора, который работает с настоящим провайдером.</p>
+ <details id="q-clone">
+  <summary>Как проверить, что игра не клон известного слота?</summary>
+  <div class="pv-ans"><p>Клон — это подделка под популярную игру: похожее название и оформление, но другой движок и непроверенный ГСЧ. Сверяйте три вещи. Первое — студию-разработчика: у оригинала она указана в окне «i» и совпадает с сайтом провайдера, у клона — отсутствует или названа незнакомым именем. Второе — точное название и максимальный выигрыш по paytable: у клонов часто занижен max win и изменена таблица выплат. Третье — наличие игры в официальном каталоге провайдера и в списке сертифицированных игр лаборатории. Если студия не подтверждается, а в каталоге провайдера такой игры нет, перед вами копия — её результат не проверен никем, и доверять ему нельзя.</p></div>
+ </details>
+</section>
+
+<section class="pv-sec" id="kassa">
+ <span class="pv-no">ГРАНИЦА · 07</span>
+ <h2>Проверенные игры на деньги и на рубли: что из проверки относится к кассе</h2>
+ <div class="pv-sum"><p><b>Целостность игры и вывод денег — две разные проверки, и путать их невыгодно.</b> Сертификат, RTP сборки, домен клиента и честный ГСЧ отвечают за то, что раунд не подкручен. Выплата на рубли зависит уже от кассы: лимитов, верификации, рельсы и условий бонуса. Проверенная игра на деньги — это две проверки подряд.</p></div>
+ <p>Когда запрос звучит как «проверенные игры на реальные деньги» или «на рубли с выводом», в нём смешаны два разных вопроса. Первый — честна ли сама игра: это всё, что разобрано выше, от сертификата до клонов. Второй — дойдёт ли выигрыш до карты: это уже касса оператора, и к устройству игры она отношения не имеет. Можно сесть в идеально проверенную игру с действующим сертификатом и максимальной сборкой RTP и всё равно столкнуться с задержкой вывода — потому что причина лежит не в игре, а в правилах выплат.</p>
+ <p>Что относится к кассе и не проверяется в окне «i»: лимиты на вывод за сутки и месяц, обязательная верификация (KYC) перед первой выплатой, доступные рельсы — СБП, карта МИР, криптосеть — и их сроки, а также условия бонуса, если выигрыш набран на бонусные деньги. Последнее — самая частая причина урезанной или отменённой выплаты: вейджер, максимальная ставка во время отыгрыша, предел вывода с бонуса (max cashout) и вклад игр решают судьбу выигрыша независимо от того, насколько честен был раунд. Выигрыш 80 000 ₽ с бездепозитного бонуса при max cashout, равном пяти бонусам, усекается по правилам, и игра тут ни при чём.</p>
+ <p>Для рублёвой выплаты добавляется ещё один слой, внешний и для игры, и для кассы, — банковский. Перевод по СБП или на карту МИР проходит через антифрод банка, и по 115-ФЗ входящий платёж от незнакомого отправителя могут задержать уже после того, как оператор отправил деньги. Это не отказ казино и не подкрутка игры, а отдельная механика, о которой полезно знать заранее. Важно и правовое: офшорные операторы работают вне закона 244-ФЗ, и правовой защиты у российского игрока при споре нет — тем ценнее проверять то, что проверяется, до того, как деньги внесены.</p>
+ <p>Отсюда порядок действий для «проверенной игры на деньги». Сначала — целостность: сертификат, RTP в «i», домен клиента, студия против каталога. Это делается в демо, бесплатно и до депозита. Затем — касса: прочитать лимиты, условия бонуса и сроки рельсы в разделе выплат, прежде чем пополнять счёт. Две проверки занимают вместе меньше десяти минут и закрывают обе причины, по которым «проверенная» на витрине игра оборачивается проигрышем или зависшим выводом.</p>
+ <div class="pv-care">
+  <b>18+.</b> Игры в казино устроены с отрицательным математическим ожиданием: на дистанции игрок проигрывает разницу между 100 % и RTP, и никакая проверка целостности этого не меняет — она лишь гарантирует, что проигрыш идёт по заявленным правилам, а не быстрее. Азартная игра может вызывать зависимость. Ставьте только суммы, потерю которых переживёте; устанавливайте лимиты депозита и сессии, пользуйтесь периодом охлаждения и самоисключением в кабинете, а при тревожных признаках обращайтесь за помощью.
+ </div>
+ <details id="q-kassa">
+  <summary>Что из проверки игры относится к выводу денег и рублёвой кассе?</summary>
+  <div class="pv-ans"><p>Проверка игры и проверка кассы — разные задачи, и их полезно не смешивать. Целостность игры (сертификат, RTP сборки, домен клиента, честный ГСЧ) отвечает за то, что результат раунда не подкручен. Вывод выигрыша зависит уже от кассы оператора: лимитов, верификации KYC, рельсы (СБП, карта МИР, криптосеть) и условий бонуса, если выигрыш набран на бонусные деньги. Даже у идеально проверенной игры выплату на рубли может задержать антифрод банка по 115-ФЗ или урезать предел вывода с бонуса. Поэтому «проверенные игры на деньги» — это две проверки подряд: сначала целостность самой игры, потом условия и сроки кассы.</p></div>
+ </details>
+</section>
+
+<section class="pv-chan" id="updates">
+ <h2>Новые разборы игр и правки таблицы — в канале</h2>
+ <p>Методика проверки, таблицы ситуаций и оценки частоты пересматриваются по мере того, как у провайдеров меняются сборки RTP и механики сертификации, а у операторов — способы маскировать урезанные версии и клиенты. Новые разборы — свежие схемы клонов, случаи с подменённым доменом клиента, расхождения демо и денег — выходят в канале.</p>
+ <a class="pv-link" href="https://t.me/top_casino_2027" rel="noopener" target="_blank">Канал в Telegram</a>
+</section>
+
+<section class="pv-sec" id="faq">
+ <span class="pv-no">ВОПРОСЫ · 08</span>
+ <h2>Что ещё спрашивают о проверенных играх</h2>
+ <p>Короткие ответы на частые вопросы из хвоста запросов. Развёрнутые разборы — в соответствующих главах: <a href="#cert">сертификат</a>, <a href="#rtp">отдача</a>, <a href="#origin">домен</a>, <a href="#demo">демо</a>, <a href="#clone">клоны</a>.</p>
+ <details id="q-mark">
+  <summary>Можно ли доверять надписи «проверено» и значкам на странице оператора?</summary>
+  <div class="pv-ans"><p>Слова «проверено», «честно», «лицензировано» и значки без ссылок — это оформление, а не доказательство. Проверяемый знак всегда ведёт к первоисточнику: печать лаборатории — к сертификату с номером, упоминание лицензии — к записи в реестре регулятора (Кюрасао, MGA), название игры — к каталогу провайдера. Если за надписью или значком нет активной ссылки на внешний документ, который можно открыть и сверить, считайте их рекламным украшением. Доказывает не слово на странице, а запись в независимом источнике.</p></div>
+ </details>
+ <details id="q-lic">
+  <summary>Нужны ли лаборатория и сертификат, если у оператора есть лицензия?</summary>
+  <div class="pv-ans"><p>Лицензия регулятора и сертификат лаборатории закрывают разные вопросы. Лицензия (например, Кюрасао или MGA) говорит о том, что у оператора есть разрешение и к нему в принципе можно предъявить претензию. Сертификат лаборатории (eCOGRA, iTech Labs, GLI, BMM) подтверждает, что генератор случайных чисел конкретной игры прошёл независимое тестирование по стандарту вроде GLI-19 и заявленная отдача соответствует математике. Лицензия без сертификатов игр оставляет вопрос честности раунда открытым, а сертификат без лицензии — вопрос, кому жаловаться при отказе в выплате. Проверять стоит оба, и для российского игрока важно помнить, что офшорные операторы работают вне 244-ФЗ и правовой защиты в России не дают.</p></div>
+ </details>
+ <details id="q-time">
+  <summary>Сколько времени занимает проверка одной игры перед ставкой на деньги?</summary>
+  <div class="pv-ans"><p>Полный обход по пяти ситуациям укладывается в три–пять минут, и большую часть из них можно сделать в демо-режиме до первого депозита. Открыть окно «i» и записать RTP и студию — около минуты. Проверить печать лаборатории кликом по логотипу — минута. Посмотреть домен в iframe через код страницы — минута. Сверить название и студию с каталогом провайдера — минута. Это разовая проверка на игру: один раз убедились в целостности — дальше следите только за кассой и своими лимитами. Время окупается тем, что исключает самые дешёвые способы вас обмануть ещё до того, как на счёт попали деньги.</p></div>
+ </details>
+</section>
+
+<footer class="pv-foot">
+ <div class="pv-wrap" style="padding:0">
+  <div class="pv-cols">
+   <div><b>Разбор тайтла</b><br>Редакция «Разбор тайтла». Методика проверки игр, таблицы ситуаций и оценки частоты — собственная расчётная модель; проценты и баллы на графиках оценочные, они иллюстрируют метод, а не измерения конкретных игр или операторов.</div>
+   <div><b>Разделы</b><br><a href="#cases">Пять ситуаций</a> · <a href="#cert">Сертификат</a> · <a href="#rtp">Отдача</a> · <a href="#origin">Домен</a> · <a href="#demo">Демо</a> · <a href="#clone">Клоны</a> · <a href="#kassa">Касса</a></div>
+   <div><b>Обновлено</b><br>1 октября 2026. Без партнёрских ссылок и рекламы операторов. Названия игр, студий и казино на странице не приводятся намеренно.</div>
+  </div>
+ </div>
+</footer>
+
+</main>
+
+<script>
+(function(){
+ var root=document.documentElement,btn=document.getElementById('pv-skin-btn');
+ try{var s=localStorage.getItem('pvk-skin');if(s)root.setAttribute('data-theme',s);}catch(e){}
+ btn.addEventListener('click',function(){
+  var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+  var next=dark?'light':'dark';root.setAttribute('data-theme',next);
+  try{localStorage.setItem('pvk-skin',next);}catch(e){}
+ });
+ var links=[].slice.call(document.querySelectorAll('.pv-menu a'));
+ if('IntersectionObserver' in window){
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.removeAttribute('aria-current');});var a=map[e.target.id];if(a)a.setAttribute('aria-current','true');}});},{rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});
+ }
+})();
+</script>
+</body>
+</html>

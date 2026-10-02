@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://proverennye-igry338.github.io/sitemap.xml
